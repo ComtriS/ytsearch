@@ -13,8 +13,7 @@
 from apiclient.discovery import build
 
 
-devKey = open("api-key", "r").read()
-#devKey = 'AIzaSyDGS3Hr4o_SJDFn1kjRy-EylAiFJcUigRU'
+devKey = open("api-key.txt", "r").read()
 api_name = "youtube"
 youtube_api_version = "v3"
 
@@ -32,12 +31,10 @@ def youtubeSearch(query):
 
     for search_result in search_response.get("items", []):
         if search_result["id"]["kind"] == "youtube#video":
-            video = " Youtube Result: %s (%s) " % (search_result["snippet"]["title"],
+            video = "Title: %s | Link: %s" % (search_result["snippet"]["title"],
                                                    "http://youtu.be/" +
                                                    search_result["id"]["videoId"])
         else:
             return "Video not found."
-
-    #video = video.decode()
 
     return video.encode('ascii', 'ignore')
