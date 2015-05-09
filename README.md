@@ -24,9 +24,9 @@ Usage
 
 Basic usage is as follows:
 ```python
-	from ytsearch import youtubeSearch
-	query = 'Up Trailer'
-	youtubeSearch(query)
+	>>> from ytsearch import youtubeSearch
+	>>> query = 'Up Trailer'
+	>>> youtubeSearch(query)
 	'Title: UP Official Movie Trailer #3 | Link: http://youtu.be/pkqzFUhGPJg'
 ```
 
