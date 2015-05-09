@@ -9,25 +9,24 @@
 # Depending on your system you may require root privileges
 # to install the required library.
 
-
+import os
 from apiclient.discovery import build
 
 
-devKey = open("api-key.txt", "r").read()
-api_name = "youtube"
-youtube_api_version = "v3"
+DEV_KEY = os.environ.get("DEVELOPER_KEY")
+API_NAME = "youtube"
+API_VERSION= "v3"
 
 
 def youtubeSearch(query):
-    youtube = build(api_name,
-                    youtube_api_version,
-                    developerKey=devKey)
+    youtube = build(API_NAME,
+                    API_VERSION,
+                    developerKey=DEV_KEY)
     search_response = youtube.search().list(
         maxResults=1,
         part="id,snippet",
         q=query
     ).execute()
-
 
     for search_result in search_response.get("items", []):
         if search_result["id"]["kind"] == "youtube#video":
