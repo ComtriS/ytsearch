@@ -23,12 +23,12 @@ Usage
 ---------
 
 Basic usage is as follows:
-
-	>>> from ytsearch import youtubeSearch
-	>>> query = 'Up Trailer'
-	>>> youtubeSearch(query)
+```python
+	from ytsearch import youtubeSearch
+	query = 'Up Trailer'
+	youtubeSearch(query)
 	'Title: UP Official Movie Trailer #3 | Link: http://youtu.be/pkqzFUhGPJg'
-
+```
 
 [1]: https://github.com/sleepyotaku/ubot/
 [2]: https://www.youtube.com/watch?v=Im69kzhpR3I
