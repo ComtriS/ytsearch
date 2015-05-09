@@ -12,9 +12,9 @@ You do not need to create an OAuth 2.0 client ID & secret, just an API key.
 
 Once you've created the API key set it locally with either:
 
-*NIX: `export DEVELOPER_KEY="yourapikeygoeshere"`
+*NIX: `$ export DEVELOPER_KEY="yourapikeygoeshere"`
 
-Windows: `set DEVELOPER_KEY="yourapikeygoeshere"`
+Windows: `C:\> set DEVELOPER_KEY="yourapikeygoeshere"`
 
 Lastly, this program requires the `Google API Client Library for Python`.
 Available from `pip` or `easy_install`. Complete installation [instructions are available here.][3]
