@@ -18,7 +18,10 @@ Windows: `C:\> set DEVELOPER_KEY="yourapikeygoeshere"`
 
 Lastly, this program requires the `Google API Client Library for Python`.
 Available from `pip` or `easy_install`. Complete installation [instructions are available here.][3]
- 
+
+`sudo pip install --upgrade google-api-python-client`
+`sudo pip install --upgrade youtube_dl`
+
 Usage
 ---------
 
